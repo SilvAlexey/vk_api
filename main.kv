@@ -1,0 +1,15 @@
+#:import os os
+
+
+<Root>:
+    orientation: 'vertical'
+    Label:
+        text: 'Its am name ...'
+    Label:
+        id: field
+    TextInput:
+        id: form
+    Button:
+        text: '2e'
+        on_press:
+            field.text = 'Hello, ' + form.text + '!'
